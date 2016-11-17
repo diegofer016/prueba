@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{724FCC1A-5D3F-4C52-9144-B061D99323C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CapaDatos</RootNamespace>
+    <AssemblyName>CapaDatos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CapaDatos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CapaDatos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalisisCiC\SqlIps_AnalisisCiC.vb" />
+    <Compile Include="Audiometria\SqlAudiometria.vb" />
+    <Compile Include="Audiometria\SqlEscalaLarsen.vb" />
+    <Compile Include="Audiometria\SqlEstadoActualAudicion.vb" />
+    <Compile Include="Audiometria\SqlGradoSeveridad.vb" />
+    <Compile Include="Audiometria\SqlGraficoAudiometriaOseo.vb" />
+    <Compile Include="Audiometria\SqlGrafico_Audiometria.vb" />
+    <Compile Include="Audiometria\SqlHistoria_Laboral_Audiometria.vb" />
+    <Compile Include="Audiometria\SqlImagenesAudiometria.vb" />
+    <Compile Include="Audiometria\SqlOtoscopia.vb" />
+    <Compile Include="Audiometria\SqlReporte_Audiometria.vb" />
+    <Compile Include="Audiometria\SqlTipo_Evaluacion_Audiometria.vb" />
+    <Compile Include="Audiometria\SqlUpdate_Recomendaciones_Audiometria.vb" />
+    <Compile Include="Audiometria\SqlVista_Recomendaciones_Para_Medicos.vb" />
+    <Compile Include="ConductaCiC\SqlIps_anularHcCic.vb" />
+    <Compile Include="ConductaCiC\SqlIps_conductaCiC.vb" />
+    <Compile Include="Default\SqlActividadEconomica.vb" />
+    <Compile Include="Default\SqlArp.vb" />
+    <Compile Include="Default\SqlAsignacionPacientes.vb" />
+    <Compile Include="Default\SqlAsignacionPacientesFunC.vb" />
+    <Compile Include="Default\SqlAuditoria.vb" />
+    <Compile Include="Default\SqlContratoServicio.vb" />
+    <Compile Include="Default\SqlCups.vb" />
+    <Compile Include="Default\SqlDireccion.vb" />
+    <Compile Include="Default\SqlDocumento.vb" />
+    <Compile Include="Default\SqlEncabezado.vb" />
+    <Compile Include="Default\SqlEncabezadoEmpresa.vb" />
+    <Compile Include="Default\SqlEps.vb" />
+    <Compile Include="Default\SqlEspecialidad.vb" />
+    <Compile Include="Default\SqlEstado.vb" />
+    <Compile Include="Default\SqlEstadoCivil.vb" />
+    <Compile Include="Default\SqlFormaPago.vb" />
+    <Compile Include="Default\SqlGenero.vb" />
+    <Compile Include="Default\SqlInformeContratoServicio.vb" />
+    <Compile Include="Default\SqlInformeTarifaServicios.vb" />
+    <Compile Include="Default\SqlIps_escolaridad.vb" />
+    <Compile Include="Default\SqlIps_Formato_Relacion_General.vb" />
+    <Compile Include="Default\SqlJoinAlarma.vb" />
+    <Compile Include="Default\SqlJoinBarrioLocalidad.vb" />
+    <Compile Include="Default\SqlJoinPersona.vb" />
+    <Compile Include="Default\SqlLocalidad.vb" />
+    <Compile Include="Default\SqlMedicos.vb" />
+    <Compile Include="Default\SqlMenu.vb" />
+    <Compile Include="Default\SqlMunicipios.vb" />
+    <Compile Include="Default\SqlOpciomes_Menu.vb" />
+    <Compile Include="Default\SqlPacientesPorAtender.vb" />
+    <Compile Include="Default\SqlPacientesPorMedico.vb" />
+    <Compile Include="Default\SqlPacientesTrabajoAlturas.vb" />
+    <Compile Include="Default\SqlPerfiles.vb" />
+    <Compile Include="Default\SqlPersona.vb" />
+    <Compile Include="Default\SqlPer_Arp.vb" />
+    <Compile Include="Default\SqlPer_Direccion.vb" />
+    <Compile Include="Default\SqlPer_Documento.vb" />
+    <Compile Include="Default\SqlPer_Eps.vb" />
+    <Compile Include="Default\SqlPer_Telefono.vb" />
+    <Compile Include="Default\SqlPer_Tercero.vb" />
+    <Compile Include="Default\SqlServicio.vb" />
+    <Compile Include="Default\SqlTarifaServicios.vb" />
+    <Compile Include="Default\SqlTelefono.vb" />
+    <Compile Include="Default\SqlTercero.vb" />
+    <Compile Include="Default\SqlTipoCC.vb" />
+    <Compile Include="Default\SqlTipo_Perfiles.vb" />
+    <Compile Include="Default\SqlUsuarios.vb" />
+    <Compile Include="Espirometria\SqlElemProteccionInsumos.vb" />
+    <Compile Include="Espirometria\SqlGradoSeveridadEspirometria.vb" />
+    <Compile Include="Espirometria\SqlHabitosEspirometria.vb" />
+    <Compile Include="Espirometria\SqlIps_espirometria.vb" />
+    <Compile Include="Espirometria\SqlPatronFunsional.vb" />
+    <Compile Include="Espirometria\SqlRealizadoEspirometria.vb" />
+    <Compile Include="Espirometria\SqlResultadosEspiro.vb" />
+    <Compile Include="Espirometria\SqlRiesgoCargoActual.vb" />
+    <Compile Include="Espirometria\SqlSintomatologia.vb" />
+    <Compile Include="Espirometria\Vista\SqlDxEspirometria.vb" />
+    <Compile Include="Espirometria\Vista\SqlVistaEncabezadoEspirometria.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcAgudezaVisual.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcAntecedentesOcupacionales.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcAntecedentesPersonales.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcConcepto.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcDatosEmpresa.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcDatosPersonales.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcDxClnico.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcExamenFisico.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcFiltro.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcGinecoObstetricios.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcHabitos.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcMiembrosInferiores.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcMiembrosSuperiores.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcOrganosSistemas.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcRecomendaciones.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcRevisionSistemas.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcRiesgoCargoActual.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcInmunizaciones.vb" />
+    <Compile Include="FormatosHc\Hc\SqlFormatoHcValoraciones.vb" />
+    <Compile Include="Hc\Reportes\SqlCertificadoMedicoOcupacional.vb" />
+    <Compile Include="Hc\Reportes\SqlServiciosPrestados.vb" />
+    <Compile Include="Hc\SqlAccidentes_Trabajo.vb" />
+    <Compile Include="Hc\SqlAccion.vb" />
+    <Compile Include="Hc\SqlAgudeza_Visual.vb" />
+    <Compile Include="Hc\SqlAlteracion.vb" />
+    <Compile Include="Hc\SqlAntecedentes_Familiares.vb" />
+    <Compile Include="Hc\SqlAntecedentes_Ocupacionales.vb" />
+    <Compile Include="Hc\SqlAntecedentes_Personales1.vb" />
+    <Compile Include="Hc\SqlAntecedentes_Personales2.vb" />
+    <Compile Include="Hc\SqlCargo.vb" />
+    <Compile Include="Hc\SQlCasoEspecial.vb" />
+    <Compile Include="Hc\SqlCie10.vb" />
+    <Compile Include="Hc\SqlConcepto.vb" />
+    <Compile Include="Hc\SqlDescripcion_Riesgo.vb" />
+    <Compile Include="Hc\SqlDescripcion_Riesgo_Higienico.vb" />
+    <Compile Include="Hc\SqlDiagnosticoCie10.vb" />
+    <Compile Include="Hc\SqlEmpresaActual.vb" />
+    <Compile Include="Hc\SqlEmp_Tipo_Examen.vb" />
+    <Compile Include="Hc\SqlEnfermedades_Profesionales.vb" />
+    <Compile Include="Hc\SqlEnfermedad_Actual.vb" />
+    <Compile Include="Hc\SqlEstudio.vb" />
+    <Compile Include="Hc\SqlExamen_Fisico.vb" />
+    <Compile Include="Hc\SqlExamen_Fisico1.vb" />
+    <Compile Include="Hc\SqlExamen_Fisico2.vb" />
+    <Compile Include="Hc\SqlExposicion_Riesgo.vb" />
+    <Compile Include="Hc\SqlFactores_Riesgo.vb" />
+    <Compile Include="Hc\SqlGineco_Obstetricios.vb" />
+    <Compile Include="Hc\SqlHabitos.vb" />
+    <Compile Include="Hc\SqlHistoria_Clinica.vb" />
+    <Compile Include="Hc\SqlIdentificacion_Enfermedad.vb" />
+    <Compile Include="Hc\SqlImpresion_Diagnostica.vb" />
+    <Compile Include="Hc\SqlInicioHC.vb" />
+    <Compile Include="Hc\SqlInmunizaciones.vb" />
+    <Compile Include="Hc\SqlIps_enfermedad_actual.vb" />
+    <Compile Include="Hc\SqlIps_MotivoConsultaCiC.vb" />
+    <Compile Include="Hc\SqlJornada.vb" />
+    <Compile Include="Hc\SqlMiembros_Inferiores.vb" />
+    <Compile Include="Hc\SqlMiembros_Superiores.vb" />
+    <Compile Include="Hc\SqlObservaciones_Revision_Sintomas.vb" />
+    <Compile Include="Hc\SqlOrganos.vb" />
+    <Compile Include="Hc\SqlOrganos_Sistemas.vb" />
+    <Compile Include="Hc\SqlOrigen_Enfermedad.vb" />
+    <Compile Include="Hc\SqlParentesco.vb" />
+    <Compile Include="Hc\SqlPer_Estudio.vb" />
+    <Compile Include="Hc\SqlPer_Parentesco.vb" />
+    <Compile Include="Hc\SqlPreguntas_Examen_Fisico2.vb" />
+    <Compile Include="Hc\SqlProgramasPrevencion.vb" />
+    <Compile Include="Hc\SqlRecomendaciones.vb" />
+    <Compile Include="Hc\SqlRecomendacionesDesc.vb" />
+    <Compile Include="Hc\SqlRevisionSistemasConcepto.vb" />
+    <Compile Include="Hc\SqlRevision_Sistemas.vb" />
+    <Compile Include="Hc\SqlRevision_Sintomas1.vb" />
+    <Compile Include="Hc\SqlRevision_Sintomas2.vb" />
+    <Compile Include="Hc\SqlRiesgo.vb" />
+    <Compile Include="Hc\SqlRiesgo_Higienico.vb" />
+    <Compile Include="Hc\SqlSintomas.vb" />
+    <Compile Include="Hc\SqlSistema.vb" />
+    <Compile Include="Hc\SqlTipoCasoEspecial.vb" />
+    <Compile Include="Hc\SqlTipoProgramaPrevencion.vb" />
+    <Compile Include="Hc\SqlTipo_Antecedente_Familiar.vb" />
+    <Compile Include="Hc\SqlTipo_Antecedente_Personal1.vb" />
+    <Compile Include="Hc\SqlTipo_Concepto.vb" />
+    <Compile Include="Hc\SqlTipo_Examen.vb" />
+    <Compile Include="Hc\SqlTipo_Recomendacion.vb" />
+    <Compile Include="Hc\SqlUltimoId.vb" />
+    <Compile Include="Hc\SqlValoraciones.vb" />
+    <Compile Include="Hc\Sql_Antecedentes_Personales_Liderso.vb" />
+    <Compile Include="Hc\Sql_Ips_Audiometria_hc.vb" />
+    <Compile Include="Hc\Sql_Ips_Espirometria_hc.vb" />
+    <Compile Include="Hc\Sql_Ips_Examen_Visual_hc.vb" />
+    <Compile Include="Hc\Sql_Ips_Otros_hc.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlEje_Anteroposterior.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlEje_Lateral.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlEstado_Eje_Anteroposterior.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlEstado_Eje_Lateral.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlEstado_Movilidad.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlEstado_Palpacion.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlEvaluacion_Codo.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlEvaluacion_Mano.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlMovilidad.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlMovilidad_Dolor.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlPalpacion.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlParte_Cuerpo.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlPhalen_Tilen.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlTipo_Eje_Anteropostrior.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlTipo_Eje_Lateral.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlTipo_Lesion_Codo.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlTipo_Lesion_Mano.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlTipo_Palpacion.vb" />
+    <Compile Include="Hc\ValoracionOsteoMuscular\SqlValoracion_Osteomuscular.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\SqlAntecedentes_ta.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\SqlOtorrinorangologia_ta.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\SqlPreguntas_ta.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\SqlPruebas_Cerebelosas_ta.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\SqlPruebas_Pares_Craneales_ta.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\SqlTipo_Cerebelosa_ta.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\Sqltipo_Fuerza_Muscular_ta.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\SqlTipo_Impresion_Diagnostica_ta.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\SqlTipo_Normal.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\SqlTipo_Otorrino_ta.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\SqlTipo_Positiva_ta.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\SqlTipo_Presente_ta.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\SqlTipo_Simetria_ta.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\SqlTipo_sino_ta.vb" />
+    <Compile Include="Hc\ValoracionTrabajoAlturas\SqlTipo_Vision_Colores_ta.vb" />
+    <Compile Include="ICS\SqlEdadVsGenero.vb" />
+    <Compile Include="ICS\SqlICSActividadFisica.vb" />
+    <Compile Include="ICS\SqlICSAlcohol.vb" />
+    <Compile Include="ICS\SqlICSAudiometriaNormal.vb" />
+    <Compile Include="ICS\SqlICSCargo.vb" />
+    <Compile Include="ICS\SqlICSColesterol.vb" />
+    <Compile Include="ICS\SqlICSEscolaridad.vb" />
+    <Compile Include="ICS\SqlICSEspirometria.vb" />
+    <Compile Include="ICS\SqlICSEstadoCivil.vb" />
+    <Compile Include="ICS\SqlICSFuma.vb" />
+    <Compile Include="ICS\SqlICSGlicemia.vb" />
+    <Compile Include="ICS\SqlICSIMC.vb" />
+    <Compile Include="ICS\SqlICSLarsen.vb" />
+    <Compile Include="ICS\SqlICSLarsenI.vb" />
+    <Compile Include="ICS\SqlICSMorbilidad.vb" />
+    <Compile Include="ICS\SqlICSProgramasPrevencion.vb" />
+    <Compile Include="ICS\SqlICSRecomendaciones.vb" />
+    <Compile Include="ICS\SqlICSSeveridadOD.vb" />
+    <Compile Include="ICS\SqlICSSeveridadOI.vb" />
+    <Compile Include="ICS\SqlICSTestSnellen.vb" />
+    <Compile Include="ICS\SqlICSTrigliceridos.vb" />
+    <Compile Include="ICS\SqlICSVisiometria.vb" />
+    <Compile Include="ICS\SqlICSTotalTrabajadores.vb" />
+    <Compile Include="Inventario\InformeAtencion\SqlAtencionAudiometria.vb" />
+    <Compile Include="Inventario\InformeAtencion\SqlAtencionEspirometria.vb" />
+    <Compile Include="Inventario\InformeAtencion\SqlAtencionMedicina.vb" />
+    <Compile Include="Inventario\InformeAtencion\SqlAtencionOptometria.vb" />
+    <Compile Include="Inventario\InformeAtencion\SqlAtencionVisiometria.vb" />
+    <Compile Include="Inventario\SqlAlarmaAlmacen.vb" />
+    <Compile Include="Inventario\SqlCategorias.vb" />
+    <Compile Include="Inventario\SqlCountAlarmaAlmacen.vb" />
+    <Compile Include="Inventario\SqlDespachos.vb" />
+    <Compile Include="Inventario\SqlDetalleMovimientos.vb" />
+    <Compile Include="Inventario\SqlMovimientos.vb" />
+    <Compile Include="Inventario\SqlProductos.vb" />
+    <Compile Include="Inventario\SqlProductosPorAcabarse.vb" />
+    <Compile Include="Inventario\SqlProveedores.vb" />
+    <Compile Include="Inventario\SqlTipoMovimiento.vb" />
+    <Compile Include="Inventario\SqlUltimoIdInventario.vb" />
+    <Compile Include="Inventario\SqlUnidad.vb" />
+    <Compile Include="Laboratorio\SqlResultadoEntregaLaboratorio.vb" />
+    <Compile Include="Laboratorio\SqlResultadoEntregaLaboratorioEncabezado.vb" />
+    <Compile Include="Laboratorio\SqlResultadoLaboratorio.vb" />
+    <Compile Include="Laboratorio\SqlTipoExamenLaboratorio.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Odontologia\SqlAnalisisEndodontico.vb" />
+    <Compile Include="Odontologia\SqlAntecedentesEstomatoloOdonto.vb" />
+    <Compile Include="Odontologia\SqlAntecedentesFamiliarOdonto.vb" />
+    <Compile Include="Odontologia\SqlAntecedentesGinecobsOdonto.vb" />
+    <Compile Include="Odontologia\SqlAntecedentesPersonalesOdonto.vb" />
+    <Compile Include="Odontologia\SqlAntecedentesToxicoOdonto.vb" />
+    <Compile Include="Odontologia\SqlConvencion.vb" />
+    <Compile Include="Odontologia\SqlDiagnosticoOdontologia.vb" />
+    <Compile Include="Odontologia\SqlDientes.vb" />
+    <Compile Include="Odontologia\SqlEvaHigieneOralOdontologia.vb" />
+    <Compile Include="Odontologia\SqlEvaluacionPeriodontalOdonto.vb" />
+    <Compile Include="Odontologia\SqlHigieneOralOdonto.vb" />
+    <Compile Include="Odontologia\SqlImagenesOdontologia.vb" />
+    <Compile Include="Odontologia\SqlIps_Odontologia.vb" />
+    <Compile Include="Odontologia\SqlPronosticoOdontologia.vb" />
+    <Compile Include="Odontologia\SqlRevisionSistemaOdonto.vb" />
+    <Compile Include="Odontologia\SqlSeccionDientes.vb" />
+    <Compile Include="Optometria\AreaOptometria\SqlAreaOptometria.vb" />
+    <Compile Include="Optometria\AreaOptometria\SqlAtriAreaOptometria.vb" />
+    <Compile Include="Optometria\SqlAv_Vl.vb" />
+    <Compile Include="Optometria\SqlExamen_Externo.vb" />
+    <Compile Include="Optometria\SqlIps_Optometria.vb" />
+    <Compile Include="Optometria\SqlLensometria.vb" />
+    <Compile Include="Optometria\SqlOftalmoscopia.vb" />
+    <Compile Include="Optometria\SqlQueratometria.vb" />
+    <Compile Include="Optometria\SqlResultados_Optometria.vb" />
+    <Compile Include="Optometria\SqlRetinoscopia.vb" />
+    <Compile Include="Optometria\SqlUltimoId_Optometria.vb" />
+    <Compile Include="Optometria\SqlValoracion_Motora.vb" />
+    <Compile Include="Optometria\Vista\SqlDxOptometria.vb" />
+    <Compile Include="Optometria\Vista\SqlIps_VistaOptometria.vb" />
+    <Compile Include="Optometria\Vista\SqlVistaOptometria.vb" />
+    <Compile Include="Profesiograma\SqlCiudad.vb" />
+    <Compile Include="Profesiograma\SqlDemandaPuestoTrabajo.vb" />
+    <Compile Include="Profesiograma\SqlElemetosPP.vb" />
+    <Compile Include="Profesiograma\SqlEmpresa.vb" />
+    <Compile Include="Profesiograma\SqlEmpresaElementosPP.vb" />
+    <Compile Include="Profesiograma\SqlEmpresaFactoresCognitivos.vb" />
+    <Compile Include="Profesiograma\SqlEmpresaFactoresMotores.vb" />
+    <Compile Include="Profesiograma\SqlEmpresaFactoresPsicosociales.vb" />
+    <Compile Include="Profesiograma\SqlEmpresaFactoresRiesgo.vb" />
+    <Compile Include="Profesiograma\SqlEmpresaFactoresSensoPerseptivos.vb" />
+    <Compile Include="Profesiograma\SqlEmpresaFuncionesOperativas.vb" />
+    <Compile Include="Profesiograma\SqlEmpresaHabitosTrabajo.vb" />
+    <Compile Include="Profesiograma\SqlEmpresaRelacionCosas.vb" />
+    <Compile Include="Profesiograma\SqlEmpresaRelacionPersonas.vb" />
+    <Compile Include="Profesiograma\SqlEmpresaTipoSilla.vb" />
+    <Compile Include="Profesiograma\SqlFactoresCognitivos.vb" />
+    <Compile Include="Profesiograma\SqlFactoresMotores.vb" />
+    <Compile Include="Profesiograma\SqlFactoresPsicosociales.vb" />
+    <Compile Include="Profesiograma\SqlFactoresRiesgo.vb" />
+    <Compile Include="Profesiograma\SqlFactoresSensoPerseptivos.vb" />
+    <Compile Include="Profesiograma\SqlFuncionesOperativas.vb" />
+    <Compile Include="Profesiograma\SqlHabitosTrabajo.vb" />
+    <Compile Include="Profesiograma\SqlPuestoTrabajo.vb" />
+    <Compile Include="Profesiograma\SqlPuestoTrabajoEvaluar.vb" />
+    <Compile Include="Profesiograma\SqlRelacionCosas.vb" />
+    <Compile Include="Profesiograma\SqlRelacionPersonas.vb" />
+    <Compile Include="Profesiograma\SqlTareas.vb" />
+    <Compile Include="Profesiograma\SqlTareasPeriocidadTareas.vb" />
+    <Compile Include="Profesiograma\SqlTipoSilla.vb" />
+    <Compile Include="Psicologia\SqlFormatos.vb" />
+    <Compile Include="Psicologia\SqlIps_antecedentesGenPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_antecedentesPsicologia.vb" />
+    <Compile Include="Psicologia\SqlIps_antecePerinaPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_antecePosnaPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_AntecePrenaPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_conductaAdaptaPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_desaOntogenePsico.vb" />
+    <Compile Include="Psicologia\SqlIps_desaSocialPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_descriExamenLaborCic.vb" />
+    <Compile Include="Psicologia\SqlIps_dGeneralPsicologia.vb" />
+    <Compile Include="Psicologia\SqlIps_enfeEmbaPorAntePrenaPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_evolucionPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_examenLabCic.vb" />
+    <Compile Include="Psicologia\SqlIps_HisFamiliarPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_HisFamiporQvivePsico.vb" />
+    <Compile Include="Psicologia\SqlIps_ImaDiagnosticoCiC.vb" />
+    <Compile Include="Psicologia\SqlIps_ImpreDiagnosticoPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_laboratorioCic.vb" />
+    <Compile Include="Psicologia\SqlIps_labValorCic.vb" />
+    <Compile Include="Psicologia\SqlIps_mesPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_motivoConsultaPsicologia.vb" />
+    <Compile Include="Psicologia\SqlIps_parentescoPorHisFamiPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_problematicaPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_Psicologia.vb" />
+    <Compile Include="Psicologia\SqlIps_RespuestaPsicoPre.vb" />
+    <Compile Include="Psicologia\SqlIps_resultadoEvolucionPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_tConductaAdapta.vb" />
+    <Compile Include="Psicologia\SqlIps_tipoConductaAdaptaPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_tipoDescripLaborCic.vb" />
+    <Compile Include="Psicologia\SqlIps_tipoEvolucionPsico.vb" />
+    <Compile Include="Psicologia\SqlIps_tipoExaLabCic.vb" />
+    <Compile Include="Psicologia\SqlIps_tipoImaDiagnosticoCiC.vb" />
+    <Compile Include="Psicologia\SqlIps_tituloPregunta.vb" />
+    <Compile Include="Psicologia\SqlIps_Titulo_Psi.vb" />
+    <Compile Include="Psicologia\SqlIps_UrlImagenDiagCiC.vb" />
+    <Compile Include="Psicologia\SqlPreguntaPsi.vb" />
+    <Compile Include="Rips\Fundemos\SqlRipsAudiometria.vb" />
+    <Compile Include="Rips\SqlRips.vb" />
+    <Compile Include="Rips\SqlRipsConsultas.vb" />
+    <Compile Include="Rips\SqlRipsPacientes.vb" />
+    <Compile Include="ServiciosPorEmpresa\SqlServicios_Por_Empresa.vb" />
+    <Compile Include="ServiciosPorEmpresa\SqlServicios_Por_Empresa_Recomendaciones.vb" />
+    <Compile Include="ServiciosPorEmpresa\SqlServicios_Por_Empresa_Servicios.vb" />
+    <Compile Include="TrabajoAlturas\SqlNivel.vb" />
+    <Compile Include="TrabajoAlturas\SqlPreguntaEncuesta.vb" />
+    <Compile Include="TrabajoAlturas\SqlRespuestaEncuesta.vb" />
+    <Compile Include="Vacunas\SqlAlarmaDetalle.vb" />
+    <Compile Include="Vacunas\SqlAlarmaMaster.vb" />
+    <Compile Include="Vacunas\SqlAlarmaSinEnviarCorreo.vb" />
+    <Compile Include="Vacunas\SqlAlarmaVacunas.vb" />
+    <Compile Include="Vacunas\SqlVacunas.vb" />
+    <Compile Include="ValoracionMedicaOcupacional\SqlVMO_Datosa_BasicosFunC.vb" />
+    <Compile Include="ValoracionMedicaOcupacional\SqlVMO_Datos_Basicos.vb" />
+    <Compile Include="ValoracionMedicaOcupacional\SqlVMO_Estudios_Complementarios.vb" />
+    <Compile Include="ValoracionMedicaOcupacional\SqlVMO_Recomendaciones.vb" />
+    <Compile Include="ValoracionMedicaOcupacional\SqlVMO_Riesgos.vb" />
+    <Compile Include="Visiometria\SqlDisposicion.vb" />
+    <Compile Include="Visiometria\SqlEqui_Snellen_Cercana.vb" />
+    <Compile Include="Visiometria\SqlEqui_Snellen_Lejana.vb" />
+    <Compile Include="Visiometria\SqlInd_Foria_Lateral.vb" />
+    <Compile Include="Visiometria\SqlInd_Foria_Vertical.vb" />
+    <Compile Include="Visiometria\SqlPrueba_Perimetrica.vb" />
+    <Compile Include="Visiometria\SqlResultados.vb" />
+    <Compile Include="Visiometria\SqlSnellen_AvAmbosOjos.vb" />
+    <Compile Include="Visiometria\SqlSnellen_AvOjoDerecho.vb" />
+    <Compile Include="Visiometria\SqlSnellen_AvOjoIzquierdo.vb" />
+    <Compile Include="Visiometria\SqlTest_Color.vb" />
+    <Compile Include="Visiometria\SqlVisiometria.vb" />
+    <Compile Include="Visiometria\SqlVision_Profundidad.vb" />
+    <Compile Include="Visiometria\Vista\SqlDxVisiometria.vb" />
+    <Compile Include="Visiometria\Vista\SqlVistaEqui_Snellen_Cercana.vb" />
+    <Compile Include="Visiometria\Vista\SqlVistaEqui_Snellen_Lejana.vb" />
+    <Compile Include="Visiometria\Vista\SqlVistaVisiometria.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidades\CapaEntidades.vbproj">
+      <Project>{24B09387-C514-4C11-B5ED-A9C2AB9B856A}</Project>
+      <Name>CapaEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Conexion\Conexion.vbproj">
+      <Project>{82CDFA48-A9E3-4A20-B5F8-CE8230B1608D}</Project>
+      <Name>Conexion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
